@@ -1,0 +1,33 @@
+html, body{height: 100%;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
+.wrapper {
+	min-width: 1024px;
+	max-width: 1920px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background:url(../img/top.jpg) no-repeat center 0;
+}
+.b_main .wrapper{background:none}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {height:265px}
+.b_main .header{height:inherit}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {padding: 0 0 138px; margin-top:25px;}
+.b_main .content {margin-top:0}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -138px auto 0;
+	min-width: 1024px;
+	max-width: 1920px;
+	height: 138px;
+	background:url(../img/bottom.jpg) no-repeat center 0;
+	position: relative;
+}

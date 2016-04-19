@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Санаторий им. ВЦСПС</title>
+
+    <!-- Bootstrap core CSS -->
+	<link href="css/client_content.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/colorbox.css" rel="stylesheet"  type="text/css">	
+    <link href="css/datepicker.css" rel="stylesheet"  type="text/css">
+	<link href="css/owl.carousel.css" rel="stylesheet"  type="text/css">
+    <link href="css/client.main.css" rel="stylesheet"  type="text/css">	
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->		
+    <script src="js/jquery.min.js"></script>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.colorbox.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript">
+	$(document).ready( function(){	
+		$('#sandbox-container .input-daterange').datepicker({
+					"weekStart": 1,
+					"format": "dd.mm.yy",
+		});	
+		$(".group1").colorbox({rel:'group1'});
+	});
+	</script>
+  </head>
+
+<body class="b_main">
+
+<div class="wrapper">
+
+	<div class="header b_wrapper_fixed">
+		<div class="b_header_top">
+			<div class="b_logo b_header_item"><a class="logo" href="/"><img src="img/logo.png"></a></div>	
+			<div class="b_phones b_header_item"><div class="b_inside"><span>+7 (831)</span><br><i>438 77 39,</i> <i>438 78 25</i></div></div>
+			<div class="b_location b_header_item"><div class="b_inside">Н. Новгород, курортный  посёлок Зелёный город</div></div>			
+			<div class="b_tour b_header_item"><div class="b_inside"><a href="#">ВИРТУАЛЬНЫЙ  3D ТУР по  санаторию</a></div></div>
+		</div>
+		<div class="b_header_menu">
+              <ul>                     
+                <li><a href="#">О санатории</a></li>
+                <li><a href="#">Проживание</a></li>
+                <li><a href="#">Цены</a></li>               
+				<li class="cms_tree_current cms_has_children">
+                  <a href="#">Бронирование</a>
+					  <ul>
+						<li><a href="#">О санатории</a></li>          
+						<li><a href="#">Проживание</a></li>         
+						<li><a href="#">Очень длинный пункт меню</a></li>         
+						<li><a href="#">Проживание</a></li>
+					  </ul>
+                </li>                 
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Лечение</a></li>
+                <li><a href="#">Досуг</a></li>
+                <li><a href="#">Питание</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Фотогалерея</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+		</div> 	
+	</div><!-- .header-->
+	<div class="b_carousel">
+		<div class="owl-carousel">
+		  <div><img src="img/Slaider1.jpg"></div>
+		  <div><img src="img/Slaider2.jpg"></div>
+		  <div><img src="img/Slaider1.jpg"></div>
+		  <div><img src="img/Slaider2.jpg"></div>
+		</div>
+	</div>
+	<div class="b_booking_bar b_wrapper_fixed">
+		<div class="b_periods">
+		<h2>Бронирование он-лайн</h2>
+		<label>Получите гарантию заселения прамо сейчас!</label>
+		<div class="b_calendar" id="sandbox-container">
+			<div class="input-daterange input-group" id="datepicker">
+			<input class="input-sm form-control" name="start" type="text" placeholder="Дата заезда">
+			<span class="input-group-addon b_addon"></span>
+			<input class="input-sm form-control" name="end" type="text" placeholder="Дата выезда">
+			<span class="input-group-addon b_addon"></span>
+			<a href="#" class="btn-blue btn-room">Найти номер</a>
+			</div>		  
+		</div>		
+		</div>
+	</div>
+	<div class="b_inform_bar b_wrapper_fixed">
+		<div class="b_inform_bar_content">
+	<div class="b_news_list">
+		<h3>Новости</h3><!-- 8.3. Картинка должна вписываться в прямоугольник - 260px*192px -->
+		<div class="b_news_item">
+						<div class="b_pic"><a href="#"><img src="example/pic1.jpg"></a></div>
+						<div class="b_desc">
+							<div class="date">19.01.2016</div>
+							<div class="txt"><a href="#">Амбулаторное лечение в санатории им.вцспс вы можете получить лечение в санатории им.вцспс вы можете получить лечение в санатории им.вцспс вы можете получить  лечение в санатории им.вцспс</a></div>
+						</div>
+					</div>
+		<div class="b_news_item">
+						<div class="b_pic"><a href="#"><img src="example/pic2.jpg"></a></div>
+						<div class="b_desc">
+							<div class="date">19.01.2016</div>
+							<div class="txt"><a href="#">Посетите косметический кабинет Санатория им.ВЦСПС!</a></div>
+						</div>
+					</div>	
+		<div class="b_more"><a href="#">Все новости</a></div>					
+	</div>
+	<div class="b_actions_list">
+		<h3>Акции и спецпредложения</h3><!-- 8.3. Картинка должна вписываться в прямоугольник - 273px*192px -->
+		<div class="b_actions_item">
+						<div class="b_pic"><a href="#"><img src="example/pic3.jpg"></a></div>
+						<div class="b_desc">
+							<div class="date">19.01.2016</div>
+							<div class="txt"><a href="#">Всем приезжающим в Санаторий им.ВЦСПС на отдых - в подарок оздоровительные процедуры!</a></div>
+						</div>
+					</div>
+		<div class="b_actions_item">
+						<div class="b_pic"><a href="#"><img src="example/pic4.jpg"></a></div>
+						<div class="b_desc">
+							<div class="date">19.01.2016</div>
+							<div class="txt"><a href="#">ООО «Санаторий им.ВЦСПС» предоставляет скидки: -10%, -20%.</a></div>
+						</div>
+					</div>	
+		<div class="b_more"><a href="#">Все спецпредложения</a></div>					
+	</div>	
+	</div></div>
+	<div class="b_rooms_list b_wrapper_fixed">
+		<h2>Номерной фонд санатория</h2>
+		<div class="b_rooms_list_content">
+		<div class="b_rooms_item">
+			<div class="b_desc">
+				<a href="#"><img src="example/pic5.jpg">Люкс-апартаменты</a>
+				<div class="b_price">от 6 750  <span>руб/сутки</span></div>
+			</div>
+			<a href="#" class="btn-blue b_book_btn">Забронировать</a>
+		</div>
+		<div class="b_rooms_item">
+			<div class="b_desc">
+				<a href="#"><img src="example/pic6.jpg">Одноместный номер первой категории АОдноместный номер первой категории А</a>
+				<div class="b_price">от 6 750  <span>руб/сутки</span></div>
+			</div>
+			<a href="#" class="btn-blue b_book_btn">Забронировать</a>
+		</div>
+		<div class="b_rooms_item">
+			<div class="b_desc">
+				<a href="#"><img src="example/pic7.jpg">Номер высшей категории  Апартамент</a>
+				<div class="b_price">от 6 750  <span>руб/сутки</span></div>
+			</div>
+			<a href="#" class="btn-blue b_book_btn">Забронировать</a>
+		</div>
+		<div class="b_rooms_item">
+			<div class="b_desc">
+				<a href="#"><img src="example/pic5.jpg">Люкс-апартаменты</a>
+				<div class="b_price">от 6 750  <span>руб/сутки</span></div>
+			</div>
+			<a href="#" class="btn-blue b_book_btn">Забронировать</a>
+		</div>	
+		<div class="b_rooms_item">
+			<div class="b_desc">
+				<a href="#"><img src="example/pic5.jpg">Люкс-апартаменты</a>
+				<div class="b_price">от 6 750  <span>руб/сутки</span></div>
+			</div>
+			<a href="#" class="btn-blue b_book_btn">Забронировать</a>
+		</div>
+		<div class="b_rooms_item">
+			<div class="b_desc">
+				<a href="#"><img src="example/pic6.jpg">Одноместный номер первой категории А</a>
+				<div class="b_price">от 6 750  <span>руб/сутки</span></div>
+			</div>
+			<a href="#" class="btn-blue b_book_btn">Забронировать</a>
+		</div>		
+	</div></div>
+	
+	
+	<div class="b_details b_wrapper_fixed">
+		<h3>Расположение:</h3>
+		<p>Санаторий им. ВЦСПС расположен в средней полосе России в 35 км. от г.Нижнего Новгорода, в хвойно-лиственном лесопарке курортного поселка Зеленый город, признанного экологически чистой местностью.</p>
+		<h3>Профиль:</h3>
+		<p>лечение и профилактика болезней органов пищеварения, дыхания, эндокринной системы и нарушения обмена веществ, в том числе сахарного диабета, нервной, сердечно-сосудистой, 
+		костно-мышечной, мочеполовой систем, гинекологических заболеваний воспалительного характера.</p>
+		<h3>Уникальность:</h3>
+		<p>Целебные минеральные воды; лечебные грязи; живописная местность и воздух повышенной ионизации; благоприятные коиматические условия.</p>
+		<h3>Питание:</h3>
+		<p>сбалансированное, диетическое, четырехразовое, по заказной системе.</p>
+		<h3>Проживание:</h3>
+		<p>в одно- и двухместных номерах со всеми удобствами первой и высшей категории.</p>
+	</div><!-- .content -->
+	
+	<div class="b_photogal"><!-- максимальная ширина для всплывающих картинок должна быть max-width:914px -->
+		<h2>Фотогалерея</h2>
+		
+		<div class="b_photo_item"><a class="group1" href="example/pic10_lg.jpg"><div class="b_pic_content"><img src="example/pic8.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+		<div class="b_photo_item"><a class="group1" href="example/pic9_lg.jpg"><div class="b_pic_content"><img src="example/pic9.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+		<div class="b_photo_item"><a class="group1" href="example/pic8_lg.jpg"><div class="b_pic_content"><img src="example/pic8.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+		<div class="b_photo_item"><a class="group1" href="example/pic10_lg.jpg"><div class="b_pic_content"><img src="example/pic9.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+		<div class="b_photo_item"><a class="group1" href="example/pic8_lg.jpg"><div class="b_pic_content"><img src="example/pic8.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+		<div class="b_photo_item"><a class="group1" href="example/pic8_lg.jpg"><div class="b_pic_content"><img src="example/pic8.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+		<div class="b_photo_item"><a class="group1" href="example/pic9_lg.jpg"><div class="b_pic_content"><img src="example/pic9.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+		<div class="b_photo_item"><a class="group1" href="example/pic8_lg.jpg"><div class="b_pic_content"><img src="example/pic8.jpg"><img src="img/green_lg.png" class="hide_pic"></div></a></div>
+	</div>
+	<div class="content"></div>
+</div><!-- .wrapper -->
+
+<div class="footer">
+	<div class="b_footer b_wrapper_fixed">
+		<div class="b_footer_item text-left">© «Санаторий им. ВЦСПС» г. Нижний Новгород,<br>2014-2015. Официальный сайт.</div>
+		<div class="b_footer_item b_footer_center text-center">Лицензия № ЛО-52-01-004069 от 09.04.2014г.</div>
+		<div class="b_footer_item b_footer_right text-right"><span>603902, Нижний Новгород, курортный поселок<br>Зеленый город</span></div>		
+	</div>
+</div><!-- .footer -->
+
+</body>
+</html>
