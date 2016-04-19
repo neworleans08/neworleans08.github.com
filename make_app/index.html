@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Make app</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+    <link href="css/page.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+		.gradient {
+		   filter: none;
+		}
+	  </style>
+	<![endif]-->
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/js.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->	
+	
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+		$("#dp3, #dp4").datepicker({
+				"weekStart": 1,
+				"format": "dd.mm.yy",
+			  });
+			  
+	  });
+	</script>
+  
+  </head>
+  <body>
+  <div class="b_container b_container_top b_container_narrow">
+      <div class="container">
+	  <div class="navbar navbar-static-top">
+            <div id="navbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#" class="btn btn-yellow gradient">Регистрация</a></li>
+                <li><a href="#" class="btn btn-yellow gradient">Для бизнеса</a></li>
+              </ul>
+            </div>
+            <a class="b_logo" href="/"><img src="gfx/logo.png"></a>
+            <div id="b_languages">
+              <ul>
+                <li class="active"><a href="#">Rus</a></li>
+                <li><a href="#">Eng</a></li>
+              </ul>
+            </div>	
+            </div>
+		</div>
+		<div class="b_city_select_wrapper">	
+			<div class="container">	
+			<div class="b_city_select">	
+				<a href="#" class="b_cur_city">Киев</a>			
+				<!-- Button trigger modal -->
+				<a href="#" class="b_city_modal" data-toggle="modal" data-target="#myModal">
+				  Выберите другой город
+				</a>
+			</div>
+			<div class="b_reg-top">
+				<form class="form-inline">
+				  <div class="form-group">
+					<input type="email" id="exampleInputEmail2" class="form-control b_log" placeholder="Логин">
+				  </div>
+				  <div class="form-group">
+					<input type="password" id="exampleInputPassword2" class="form-control b_passw" placeholder="Пароль">
+				  </div>
+				  <button class="btn-enter" type="submit">Войти</button>
+				</form>
+		    </div>			
+			<div class="b_search-top">
+				<form class="form-inline">
+				 <div class="form-group b_search_place">
+				   <input type="text" class="form-control" placeholder="поиск">
+				   <button type="submit" class="btn btn-default"></button>
+				 </div>		
+			    </form>
+			</div>	</div>	 
+		</div>	
+<!-- Modal -->
+<div class="modal fade b_modal_city" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+		<form class="form-inline"><h3>Для использования сервиса выберите город</h3>
+		  <div class="form-group b_category_group">
+			 <div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle b_category" data-toggle="dropdown" aria-expanded="false">
+				<div class="b_category_title">Киев</div><div class="b_caret"><span class="caret"></span></div>
+			  </button>
+			  <div class="dropdown-menu" role="menu">
+				<a href="#">Одесса</a>         
+			  <a href="#">Киев</a>
+			  <a href="#">Одесса</a>
+			  <a href="#">Харьков</a>
+			  <a href="#">Львов</a>				
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<div class="btn-group b_btn_cities" role="group" aria-label="...">           
+			  <a href="#" class="btn btn-default">Киев</a>
+			  <a href="#" class="btn btn-default">Одесса</a>
+			  <a href="#" class="btn btn-default">Харьков</a>
+			  <a href="#" class="btn btn-default">Львов</a>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default dropdown-toggle red" data-toggle="dropdown" aria-expanded="false">
+				  Еще
+				  <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="#">Львов</a></li>
+				  <li><a href="#">Львов</a></li>
+				</ul>
+			  </div>
+			</div>		  
+		      <button class="btn btn-yellow " type="button">Сохранить</button>
+			</div>		  
+		</form>
+      </div>
+    </div>
+  </div>
+</div>		
+  </div>
+  
+  <div class="b_container b_container_book b_container_wide">  
+      <div class="container b_booking_content">
+	   <h2 class="b_container_book_title"><span>Забронируй свою красоту</span>более <a href="#">3000</a> процедур<br>в нашем каталоге</h2>
+<div role="tabpanel" class="b_booking_sort">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active b_book_service gradient"><a href="#book_service" aria-controls="book_service" role="tab" data-toggle="tab">Бронировать услугу</a></li>
+    <li role="presentation" class="b_book_beauty"><a href="#book_beauty" aria-controls="book_beauty" role="tab" data-toggle="tab">Бронировать экспресс-красоту</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content gradient">
+    <div role="tabpanel" class="tab-pane active" id="book_service">
+		<form class="form-inline">
+		  <div class="form-group b_category_group">
+			 <div class="btn-group">
+			  <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle b_category" type="button">
+				<div class="b_category_title"><sup>*</sup>Что бронируем?</div><div class="b_caret"><span class="caret"></span></div>
+			  </button>
+			  <div role="menu" class="dropdown-menu">
+				<h2>Волосы</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<h2>Ногти</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<h2>Волосы</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<h2>Ногти</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>	
+			  </div>
+			</div>
+		  </div>
+          <div class="form-group">
+			 <input type="text" id="dp3" value="" class="form-control b_datepick" required="required"><label for="dp3"><span>*</span>Когда?</label>
+		  </div>
+		  <div class="form-group">				
+		      <button data-target="#modal_map" data-toggle="modal" type="button" class="btn btn-yellow btn-enter">Найти</button>
+			</div>		  
+		</form>		
+	</div>
+    <div role="tabpanel" class="tab-pane" id="book_beauty">
+		<form class="form-inline">
+		  <div class="form-group b_category_group">
+			 <div class="btn-group">
+			  <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle b_category" type="button">
+				<div class="b_category_title"><sup>*</sup>Что бронируем?</div><div class="b_caret"><span class="caret"></span></div>
+			  </button>
+			  <div role="menu" class="dropdown-menu">
+				<h2>Волосы</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<h2>Ногти</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<h2>Волосы</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<h2>Ногти</h2>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Обрезной маникюр</a>
+				<a href="#">Педикюр</a>
+				<a href="#">Френч</a>
+				<a href="#">Аппаратный педикюр</a>
+				<a href="#">Френч</a>	
+			  </div>
+			</div>
+		  </div>
+          <div class="form-group">
+			 <input type="text" id="dp4" value="" class="form-control b_datepick" required="required"><label for="dp4"><span>*</span>Когда?</label>
+		  </div>
+		  <div class="form-group">				
+		      <button type="button" class="btn btn-yellow btn-enter">Найти</button>
+			</div>		  
+		</form>		
+	</div>	
+  </div>
+
+</div>	   
+	  </div>
+	  <div class="b_recommend_content">
+		  <div class="b_top"></div>
+		  <div class="container">
+			<div class="row b_catalog_list">
+				<div class="col-lg-4 col-md-4 b_item">
+				  <label>1</label>
+				  <a class="b_pic" href="#"><img src="gfx/recommend3.jpg">
+					  <h2>Уникальный Spa-салон с историей</h2></a>
+				</div>
+				<div class="col-lg-4 col-md-4 b_item">
+				  <label>1</label>
+				  <a class="b_pic" href="#"><img src="gfx/recommend2.jpg">
+					  <h2>Дом красоты Виктории Сагаловой</h2></a>
+				</div>
+				<div class="col-lg-4 col-md-4 b_item">
+				  <label>1</label>
+				  <a class="b_pic" href="#"><img src="gfx/recommend1.jpg">
+					  <h2>«Deli» Индийский дом релаксации</h2></a>
+				</div>
+				<div class="clearfix"></div>
+				<h3>Мы рекомендуем</h3>
+				<p>Мы рады приветствовать Вас на сайте нашего салона красоты "Трюфель". Ежедневно команда опытных мастеров трудится, чтобы дарить Вам хорошее настроение, ощущение уверенности в себеи своей неотразимости.</p>
+			    
+			</div>	
+		  </div>
+		  <div class="b_bottom"></div>
+	  </div>
+	  
+  </div>
+  <div class="b_container  b_container_wide b_content_certificate">
+	    <h2>Подарочные<br>сертификаты</h2>
+	  <div class="container">
+	   <div class="b_certificate_desc">
+		<div><h3>Только Make app вы можете заказать подарочные сертификаты по уникальному коду</h3>
+		<p>Мы рады приветствовать Вас на сайте нашего салона красоты "Трюфель". Ежедневно команда опытных мастеров трудится, чтобы дарить Вам хорошее настроение, ощущение уверенности в себе и своей неотразимости.</p>
+		</div>
+		</div>
+	</div>  
+  </div>
+  <div class="b_container b_container_actions b_container_wide">  
+	<div class="b_top"></div>
+	 <div class="b_actions_content">
+      <div class="container">
+	    <h2>Акции и<br>спецпредложения</h2>
+		<div  id="carousel-example-generic" class="carousel slide b_carousel" data-ride="carousel">
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+              <div class="b_carousel_item">
+				  <a class="b_pic" href="#">				  
+				  <div class="b_price"><span>2026 $</span></div>
+				    <img src="gfx/pic1.jpg">
+						  <h3>Маникюр с покрытием</h3>
+				  </a>
+				  <p>Акция проводится только для зарегистрированных пользователей системы Make app</p>
+				  <div class="text-center b_details"><button class="btn btn-more" type="button">Подробнее</button>
+				  <a href="#" class="b_same">Похожие акции</a></div>
+			  </div>
+              <div class="b_carousel_item spec">
+				  <a class="b_pic" href="#">				  
+				  <div class="b_price"><span>26 $</span></div>
+				    <img src="gfx/pic2.jpg">
+						  <h3>Стрижка +окрашивание +укладка</h3>
+				  </a>
+				  <p>В цену входит стрижка средней длины волос, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, мытье головы, сушка головы.</p>
+				  <div class="text-center"><button class="btn btn-more" type="button">Подробнее</button>
+				  <a href="#" class="b_same">Похожие акции</a></div>
+			  </div>
+              <div class="b_carousel_item">
+				  <a class="b_pic" href="#">				  
+				  <div class="b_price"><span>206 $</span></div>
+				    <img src="gfx/pic3.jpg">
+						  <h3>Лифтинг для век</h3>
+				  </a>
+				  <p>Процедура рекомендована лицам от 30 лет, перед покупкой советуем проконсультироваться со специалистом</p>
+				  <div class="text-center"><button class="btn btn-more" type="button">Подробнее</button>
+				  <a href="#" class="b_same">Похожие акции</a></div>
+			  </div>			  
+			</div>
+			<div class="item">
+              <div class="b_carousel_item">
+				  <a class="b_pic" href="#">				  
+				  <div class="b_price"><span>2026 $</span></div>
+				    <img src="gfx/pic1.jpg">
+						  <h3>Маникюр с покрытием</h3>
+				  </a>
+				  <p>Акция проводится только для зарегистрированных пользователей системы Make app</p>
+				  <div class="text-center b_details"><button class="btn btn-more" type="button">Подробнее</button>
+				  <a href="#" class="b_same">Похожие акции</a></div>
+			  </div>
+              <div class="b_carousel_item spec">
+				  <a class="b_pic" href="#">				  
+				  <div class="b_price"><span>26 $</span></div>
+				    <img src="gfx/pic2.jpg">
+						  <h3>Стрижка +окрашивание +укладка</h3>
+				  </a>
+				  <p>В цену входит стрижка средней длины волос, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, мытье головы, сушка головы.</p>
+				  <div class="text-center"><button class="btn btn-more" type="button">Подробнее</button>
+				  <a href="#" class="b_same">Похожие акции</a></div>
+			  </div>
+              <div class="b_carousel_item">
+				  <a class="b_pic" href="#">				  
+				  <div class="b_price"><span>206 $</span></div>
+				    <img src="gfx/pic3.jpg">
+						  <h3>Лифтинг для век</h3>
+				  </a>
+				  <p>Процедура рекомендована лицам от 30 лет, перед покупкой советуем проконсультироваться со специалистом</p>
+				  <div class="text-center"><button class="btn btn-more" type="button">Подробнее</button>
+				  <a href="#" class="b_same">Похожие акции</a></div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Indicators -->
+		  <ul class="b_controls"><li><!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span aria-hidden="true"></span>
+			  </a></li><li>
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			  </ol></li><li>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span aria-hidden="true"></span>
+			  </a></li>
+		  </ul>
+		</div>	
+	  </div></div><a id="anchor1"></a>
+	  <div class="bb_bottom"></div>
+  </div>
+  <div class="b_container b_container_views b_container_wide">  
+      <div class="container">
+	  <h2>Сейчас<br>просматривают</h2>
+	  <div data-ride="carousel" class="carousel slide b_carousel" id="carousel-example">
+
+		  <!-- Wrapper for slides -->
+		  <div role="listbox" class="carousel-inner">
+			<div class="item active">
+              <div class="b_carousel_item">
+				  <a href="#" class="b_pic">				  
+				  <div class="b_price"><span>2026 $</span></div>
+				    <img src="gfx/pic4.jpg">
+						  <h3>Spa-процедура на выбор</h3>
+				  </a>
+				  <p>Акция проводится только для зарегистрированных пользователей системы Make app</p>
+				  <div class="text-center b_details"><button type="button" class="btn btn-more">Подробнее</button>
+				  </div>
+			  </div>
+              <div class="b_carousel_item spec">
+				  <a href="#" class="b_pic">				  
+				  <div class="b_price"><span>26 $</span></div>
+				    <img src="gfx/pic5.jpg">
+						  <h3>Стрижка мужская-креатив</h3>
+				  </a>
+				  <p>В цену входит стрижка средней длины волос, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, мытье головы, сушка головы.</p>
+				  <div class="text-center"><button type="button" class="btn btn-more">Подробнее</button>
+				  </div>
+			  </div>
+              <div class="b_carousel_item">
+				  <a href="#" class="b_pic">				  
+				  <div class="b_price"><span>206 $</span></div>
+				    <img src="gfx/pic6.jpg">
+						  <h3>Шоколадное обертывание</h3>
+				  </a>
+				  <p>Процедура рекомендована лицам от 30 лет, перед покупкой советуем проконсультироваться со специалистом</p>
+				  <div class="text-center"><button type="button" class="btn btn-more">Подробнее</button>
+				  </div>
+			  </div>			  
+			</div>
+			<div class="item">
+              <div class="b_carousel_item">
+				  <a href="#" class="b_pic">				  
+				  <div class="b_price"><span>2026 $</span></div>
+				    <img src="gfx/pic4.jpg">
+						  <h3>Маникюр с покрытием</h3>
+				  </a>
+				  <p>Акция проводится только для зарегистрированных пользователей системы Make app</p>
+				  <div class="text-center b_details"><button type="button" class="btn btn-more">Подробнее</button>
+				  </div>
+			  </div>
+              <div class="b_carousel_item spec">
+				  <a href="#" class="b_pic">				  
+				  <div class="b_price"><span>26 $</span></div>
+				    <img src="gfx/pic5.jpg">
+						  <h3>Стрижка +окрашивание +укладка</h3>
+				  </a>
+				  <p>В цену входит стрижка средней длины волос, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, окрашивание головы в 1 тон, укладка феном, мытье головы, сушка головы, мытье головы, сушка головы.</p>
+				  <div class="text-center"><button type="button" class="btn btn-more">Подробнее</button>
+				  </div>
+			  </div>
+              <div class="b_carousel_item">
+				  <a href="#" class="b_pic">				  
+				  <div class="b_price"><span>206 $</span></div>
+				    <img src="gfx/pic6.jpg">
+						  <h3>Лифтинг для век</h3>
+				  </a>
+				  <p>Процедура рекомендована лицам от 30 лет, перед покупкой советуем проконсультироваться со специалистом</p>
+				  <div class="text-center"><button type="button" class="btn btn-more">Подробнее</button>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Indicators -->
+		  <ul class="b_controls"><li><!-- Controls -->
+			  <a data-slide="prev" role="button" href="#carousel-example" class="left carousel-control">
+				<span aria-hidden="true"></span>
+			  </a></li><li>
+			  <ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#carousel-example"></li>
+				<li data-slide-to="1" data-target="#carousel-example" class=""></li>
+			  </ol></li><li>
+			  <a data-slide="next" role="button" href="#carousel-example" class="right carousel-control">
+				<span aria-hidden="true"></span>
+			  </a></li>
+		  </ul>
+		</div>
+	  </div>
+  </div>
+    <div class="b_container b_container_feed b_container_wide">  
+      <div class="container">
+		<div class="b_nav_bottom">
+			<ul> 
+			  <li><a href="#" class="red">Follow us</a></li>
+			  <li><a href="#" class="red">Мобильное приложение</a></li>
+			  <li><a href="#" class="red">Консультация специалиста</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Все об услугах</a></li>
+				<li><a href="#">Стань партнером</a></li>
+				<li><a href="#">Пресса о нас</a></li>
+			</ul>
+		  </div>	
+		  
+		<form class="form-inline b_feed_form">
+		<h2>Make app project контакты</h2>
+		  <div class="form-group">
+			<input type="text" class="form-control long" id="exampleName" required="required"><label for="exampleName">Ваше Имя<span>*</span></label>
+		  </div>
+		  <div class="form-group">
+			<input type="text" class="form-control" id="exampleEmail" required="required"><label for="exampleEmail">E-mail<span>*</span></label>
+		  </div>
+		  <div class="clearfix"></div>
+		  <div class="form-group b_text">
+		   <textarea class="form-control" rows="7" required="required" id="exampleText"></textarea><label for="exampleText">Сообщение<span>*</span></label>
+		  </div>
+		  <button class="btn_send_feed" type="button"></button>
+		</form>	 
+	<div class="b_container-footer">
+        <div class="container">
+		<div class="text-center">© Make app 2014-2015<span>Все права защищены</span></div>
+		</div>
+	  </div>			
+	  </div>
+	</div>
+	<div class="b_reminder"><button class="close" type="button"><span></span></button>
+      <div class="b_reminder_container">
+	   <div class="b_reminder_container_text"><h3>Получи консультацию специалиста бесплатно!</h3>
+	   <p>Уникальная возможность получить совет любого гуру красоты совершенно бесплатно.</p>
+	   <button class="btn btn-red" type="button">Подробнее</button>
+	   </div>
+	  </div>
+	</div>
+	<div class="b_right_stuff">
+	 <a href="#" class="b_mobile_load"><img src="gfx/mobile.png"></a>
+	 <a href="#anchor1"  class="b_cur_watch"><img src="gfx/cur.png"></a>
+	</div>
+	
+  </body>
+</html>
