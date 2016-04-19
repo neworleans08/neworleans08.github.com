@@ -1,0 +1,54 @@
+
+#content { min-width:990px; padding:0 0 110px 0;}
+#index-content { display:none; min-width:990px; padding:0 0 110px 0;}
+
+	#pway { margin:0 0 18px 0; font-size:12px; color:#a8a8a8;}
+		#pway a { color:#a8a8a8; text-decoration:none;}
+		#pway a:hover { text-decoration:underline;}
+		
+	.person-bage { float:left; width:290px; padding:20px; margin:0 25px 20px 0; background:#f9f9f9; font:18px 'pf_dintext_proregular', Arial; box-shadow:inset 0 4px 9px rgba(0,0,0,0.06);}
+		.person-bage p { padding:0; margin:0;}
+		.person-bage img { margin:0 0 10px 0;}
+		
+	h1.before_operation { display: none;}
+	h1.object_in_operation { display: none;}
+	h1.under_construction { display: none;}
+	h1.object_in_operation { display: none;}
+	
+	#licenses { position:relative; margin:0 0 0 -85px;}
+	
+		.license-item { position:relative; float:left; width:266px; padding:15px 0 25px 0; margin:0 0 0 85px;}
+			.license-item img { display:block; border:#ffffff 3px solid;}
+			.license-item a:hover img { border-color:#c4e402; box-shadow:4px 4px 4px rgba(0,0,0,0.15);}
+	
+	#contacts-map { height:570px; box-shadow:inset 0 4px 9px rgba(0,0,0,0.06);}
+	
+	#client-inner-slider { position:relative; width:609px; margin:0 0 3px; overflow:hidden; background:none; font-size:16px; color:#ffffff;}
+		
+		#client-inner-slider ul { position:relative; width:50000em; padding:0; margin:0; list-style:none;}
+		#client-inner-slider ul li { float:left; width:609px; padding:0; margin:0; background:none;}
+			.client-inner{ border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;}
+			.client-inner-left { float:left; width:609px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;}
+				.client-inner-left a { display:block; position:relative; float:left; border:none;}
+					.client-inner-left img { display:block; float:left; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;}
+					.client-inner-left a i { position:absolute; right:7px; top:7px; width:41px; height:41px; background:url(../gfx/lupa.png) left top no-repeat;}
+    .client-inner-left a i:hover{opacity:0.85}
+			.client-inner-right { float:right; width:290px; padding:20px 20px 0 0;}
+			
+	.slider { position:relative; margin:0; width:609px}
+		.slider-inner { position:relative; height:106px; overflow:hidden;}
+		.slider-inner ul { position:relative; width:50000em; padding:0; margin:0; list-style:none;}
+		.slider-inner ul li { float:left; width:100px; padding:0; margin:0 3px 0 0; background:none;}
+		
+			.slider-inner ul li a, .slider-inner ul li img { position:relative; display:block; float:left;}
+			.slider-inner ul li a span { display:none; position:absolute; left:0; top:0; right:0; bottom:0; background-color: rgba(62, 181, 241, 0.8);}
+			.slider-inner ul li.active a span, .slider-inner ul li a:hover span { display:block;}
+			
+		a.slider-prev { overflow:hidden; position:absolute; left:5px; top:-240px; width:36px; height:71px; background:url(../gfx/l_arr.png) left top no-repeat;}
+			a.slider-prev:hover { opacity:0.85}
+			a.slider-prev.inactive { opacity:0.5; background-position:left top!important; cursor:default;}
+		a.slider-next { overflow:hidden; position:absolute; right:5px; top:-240px; width:36px; height:71px; background:url(../gfx/r_arr.png) right top no-repeat;}
+			a.slider-next:hover { opacity:0.85}
+			a.slider-next.inactive { opacity:0.5; background-position:right top!important; cursor:default;}
+
+	

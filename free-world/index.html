@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Мир без денег</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+	
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->	
+	
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+		$('.flexslider').flexslider({animation: "slide"});
+		$(".b_reg-top .form-group img").on("click", function(){
+		$(".b_reg-top .form-group img").show();
+           $(this).hide().prev().focus();
+        });		
+		  $("#back-top").hide();		   
+		  $(function () {
+			$(window).scroll(function () {
+			  if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			  } else {
+				$('#back-top').fadeOut();
+			  }
+			});
+			$('#back-top a').click(function () {
+			  $('body,html').animate({
+				scrollTop: 0
+			  }, 1500);
+			  return false;
+			});
+		  });
+	  });
+	</script>
+	<script>
+    $(document).click( function(event){
+      if( $(event.target).closest(".b_reg-top .form-group img").length ) 
+        return;
+      if( $(".b_reg-top .form-group .form-control").val() == 0)		
+      $(".b_reg-top .form-group img").show();
+      event.stopPropagation();
+    });
+  </script>
+  
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+  <div class="navbar-wrapper b_container-wide">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <a href="/" class="b_logo"><img src="gfx/logo.jpg"></a>
+            <div id="navbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">О проекте</a></li>
+                <li><a href="#about">Помощь</a></li>
+                <li><a href="#contact">Объявления</a></li>
+                <li class="dropdown">
+                  <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Ещё <span class="caret"></span></a>
+                  <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+			<div class="b_reg-top">
+				<form class="form-inline">
+				  <div class="form-group">
+					<input type="email" class="form-control b_log" id="exampleInputEmail2">
+					<img src="gfx/title1.jpg">
+				  </div>
+				  <div class="form-group">
+					<input type="password" class="form-control b_passw" id="exampleInputPassword2">
+					<img src="gfx/title2.jpg">
+				  </div>
+				  <button type="submit" class="btn btn-dark btn-enter">Войти</button>
+				</form>
+		    </div>
+        </nav>
+
+      </div>
+    </div>
+    <div class="navbar-wrapper navbar-wrapper_flexslider">
+		<div class="flexslider">
+		  <ul class="slides">
+			<li>
+			  <img src="gfx/1.jpg" />
+			  <div class="b_black"></div>
+			  <div class="b_desc">
+			    <h3>Чувство полета <br>на льду <b>не купишь</b><br> за деньги</h3>
+				<p>Коньки женские 30 смайлов<br>и еще <a href="#">3000 вещей</a></p>
+				<button type="submit" class="btn btn-green btn-to_advert">Подать объявление</button>
+			  </div>
+			</li>
+			<li>
+			  <img src="gfx/1.jpg" />
+			  <div class="b_black"></div>
+			  <div class="b_desc">
+			    <h3>Чувство полета <br>на льду <b>не купишь</b><br> за деньги</h3>
+				<p>Коньки женские 30 смайлов<br>и еще <a href="#">3000 вещей</a></p>
+				<button type="submit" class="btn btn-green btn-to_advert">Подать объявление</button>
+			  </div>
+			</li>
+			<li>
+			  <img src="gfx/1.jpg" />
+			  <div class="b_black"></div>
+			  <div class="b_desc">
+			    <h3>Чувство полета <br>на льду <b>не купишь</b><br> за деньги</h3>
+				<p>Коньки женские 30 смайлов<br>и еще <a href="#">3000 вещей</a></p>
+				<button type="submit" class="btn btn-green btn-to_advert">Подать объявление</button>
+			  </div>
+			</li>
+			<li>
+			  <img src="gfx/1.jpg" />
+			  <div class="b_black"></div>
+			  <div class="b_desc">
+			    <h3>Чувство полета <br>на льду <b>не купишь</b><br> за деньги</h3>
+				<p>Коньки женские 30 смайлов<br>и еще <a href="#">3000 вещей</a></p>
+				<button type="submit" class="btn btn-green btn-to_advert">Подать объявление</button>
+			  </div>
+			</li>
+		  </ul>
+		  <div class="b_scroll"></div>
+		</div>
+    </div>
+    <div class="b_container-wide">
+      <div class="container">
+	   <div class="b_search_bar">
+		<form class="form-inline">
+		  <div class="form-group">
+			<a href="#">Смотреть все объявления</a>
+		  </div>
+		  <div class="form-group">
+			<a href="#" class="b_to_list"></a>
+		  </div>
+		 <div class="form-group b_search_place">
+            <input type="text" class="form-control">
+         <button class="btn btn-default" type="submit"></button>
+         </div>
+		</form>
+	   </div>	  
+	  </div>
+	</div>
+    <div class="b_container-catalog">
+      <div class="container">
+	  <h2>Последние объявления<span></span></h2>
+	  <h3>В этом каталоге <a href="#">3000 вещей</a></h3>
+	  <div class="row b_catalog_list">
+        <div class="col-lg-4 col-md-4 b_item">
+		  <a href="#" class="b_pic"><img src="gfx/pic1.jpg">
+		  <label>= 100 смайликов</label></a>
+		  <div class="b_desc_item">
+			  <h2><a href="#">Пианино немецкое</a></h2>
+			  <p class="text-danger">Пианино 1994 года в отличном состоянии.</p>
+		  </div>
+          <p><a role="button" href="#" class="btn btn-green">Посмотреть</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 b_item">
+		  <a href="#" class="b_pic"><img src="gfx/pic2.jpg">
+		  <label>= 100 смайликов</label></a>
+		  <div class="b_desc_item">
+			  <h2><a href="#">Игрушка Мишка  для малыша</a></h2>
+			  <p>Пианино 1994 года в отличном состоянии.<a href="#">Пианино 1994 года в отличном</a> состоянии.</p>
+		  </div>
+          <p><a role="button" href="#" class="btn btn-green">Посмотреть</a></p>
+       </div>
+        <div class="col-lg-4 col-md-4 b_item">
+		  <a href="#" class="b_pic"><img src="gfx/no_photo.jpg">
+		  <label>= 100 смайликов</label></a>
+		  <div class="b_desc_item">
+			  <h2><a href="#">Коньки женские</a></h2>
+			  <p>Пианино 1994 года в отличном состоянии..<a href="#">Пианино 1994 года в отличном состоянии</a>.Пианино 1994 года в отличном состоянии.</p>
+		   </div>
+          <p><a role="button" href="#" class="btn btn-green">Посмотреть</a></p>
+        </div>
+		<div class="col-lg-4 col-md-4 b_item">
+		  <a href="#" class="b_pic"><img src="gfx/pic4.jpg">
+		  <label>= 100 смайликов</label></a>
+		  <div class="b_desc_item">
+			  <h2><a href="#">Кресло мягкое</a></h2>
+			  <p class="text-danger">Пианино 1994 года в отличном состоянии.</p>
+          </div>
+		  <p><a role="button" href="#" class="btn btn-green">Посмотреть</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 b_item">
+		  <a href="#" class="b_pic"><img src="gfx/pic5.jpg">  
+		  <label>= 100 смайликов</label></a>
+		  <div class="b_desc_item">          
+			  <h2><a href="#">Игрушка Мишка  для малыша</a></h2>
+			  <p>Пианино 1994 года в отличном состоянии.Пианино 1994 года в отличном состоянии.</p>
+		  </div>
+          <p><a role="button" href="#" class="btn btn-green">Посмотреть</a></p>
+       </div>
+        <div class="col-lg-4 col-md-4 b_item">
+		  <a href="#" class="b_pic"><img src="gfx/pic6.jpg">
+		  <label>= 100 смайликов</label></a>
+			  <div class="b_desc_item">
+          <h2><a href="#">Мяч футбольный</a></h2>		  
+			  <p>Пианино 1994 года в отличном состоянии.</p>
+		  </div>
+          <p><a role="button" href="#" class="btn btn-green">Посмотреть</a></p>
+        </div>
+      </div>
+	  </div>
+	</div>
+	  <div class="b_container-using">
+        <div class="container">
+		<div class="b_using">
+		<h2>Мир без денег</h2>
+		<h3>Уникальный digital проект для каждого</h3>
+		<div id="carousel-example-generic" class="carousel slide b_using_carousel" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+				<div class="item active">
+				  <div class="carousel-caption">
+				  <h3><span>1</span><a href="#">Регистрация</a></h3>
+				  <p>После регистрации на площадке<br>Мир без денег Вы сможете создавать<br>и откликаться на объявления<br>пользователей</p>
+				  </div>
+				</div>
+				<div class="item">
+				  <div class="carousel-caption">
+				  <h3><span>2</span><a href="#">Авторизация</a></h3>
+				  <p>После регистрации на площадке<br>Мир без денег Вы сможете создавать<br>и откликаться на объявления<br>пользователей</p>
+				  </div>
+				</div>
+					<div class="item">
+				  <div class="carousel-caption">
+				  <h3><span>3</span><a href="#">Создание объявления</a></h3>
+				  <p>После регистрации на площадке<br>Мир без денег Вы сможете создавать<br>и откликаться на объявления<br>пользователей</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			</div>
+		</div>
+	  </div>
+	  <div class="b_container-footer">
+        <div class="container">
+		<div class="b_columns_list">
+			 <div class="column">
+			   <a href="#">Подать объявление</a><a href="#">Объявления</a><a href="#">Помощь</a>
+			 </div>
+			 <div class="column">
+			   <a href="#">Арбитраж</a><a href="#">О сервисе</a><a href="#">Реклама на сайте</a>
+			 </div>		 		 
+			 <div class="column">  
+			   <a href="#">Личный кабинет</a><a href="#">Регистация</a><a href="#">Кошелек</a>
+			 </div>	 
+		 </div>		
+		 <div class="pull-right b_payments">
+		  <a href="#" class="maestro"></a><a href="#" class="visa"></a><a href="#" class="qiwi"></a><a href="#" class="robo"></a><a href="#" class="money"></a><a href="#" class="western"></a><a href="#" class="master"></a><a href="#" class="paypal"></a><a href="#" class="yandex"></a>
+		</div>
+		</div>
+	  </div>
+	  <div class="b_container-footer_bar">
+        <div class="container">© Мир без денег 2014-2015</div>
+	  </div>
+	  <div id="back-top"><a href="#"></a></div>
+  </body>
+</html>
