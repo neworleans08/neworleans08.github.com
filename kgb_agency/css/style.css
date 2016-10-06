@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	height: 100%;
+}
+.wrapper {
+	min-width: 1280px;
+	max-width: 1680px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	position:relative
+}
+#header{
+		top:0px;
+	}
+#footer {
+    bottom: 0;
+}
+#header, #footer {
+    display: block;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+	min-width: 1280px;
+	max-width: 1680px;
+    z-index: 9;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 140px;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 0 0 177px;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {}
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	float: left;
+	width: 210px;
+	margin-left: -100%;
+	position: relative;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {}
