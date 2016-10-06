@@ -1,0 +1,14 @@
+.criticalWindow {
+	padding:0;
+	margin:0;
+	width:100%; 
+	text-align:center; 
+	background:#AD1A20; 
+	z-index:99999999999999;
+	height: 42px; 
+	position: relative;
+	line-height:42px;
+}
+.criticalWindow a {
+	color:#fff;
+}

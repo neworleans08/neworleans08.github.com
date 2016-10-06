@@ -1,0 +1,360 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+	#Misc */
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	line-height: 1; height:100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* #Basic Styles
+================================================== */
+body {
+	background: #fff;
+	font: 14px/14px Arial, sans-serif;
+	color: #000;
+}
+/* #Typography
+================================================== */	
+h1 { font-size: 60px; line-height: 60px; }
+h2 { font-size: 28px; line-height: 28px; margin-bottom: 10px; }
+h3 { font-size: 24px; line-height: 24px; }
+h4 { font-size: 18px; line-height: 18px; margin-bottom: 4px; }
+h5 { font-size: 16px; line-height: 16px; }
+h6 { font-size: 14px; line-height: 14px; }
+p { margin: 0 0 20px; }
+p img { margin: 0; }
+em, i { font-style: italic; }
+strong { font-weight: 700;}
+small { font-size: 11px; }
+/*	Blockquotes  */
+blockquote, blockquote p { font-size: 12px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+/* #Links
+================================================== */
+a {
+}
+a:hover {
+	text-decoration:none;
+}
+/* #Lists
+================================================== */
+ul, ol {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+/* #Images
+================================================== */
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; 
+}
+/* #Buttons
+================================================== */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	border: none;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: normal;
+	font-size:24px;
+	padding: 8px 0;
+	text-align:center;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+	
+}
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+	
+}
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center; 
+}
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/* #Forms
+================================================== */
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+form { 
+
+}
+fieldset {
+	
+}
+
+::-moz-focus-inner { border: 0; padding: 0; }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+	
+}
+select {
+	padding: 0; 
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	
+}
+textarea {
+	resize:none;
+	overflow:hidden;
+	overflow-y:auto;
+	min-height: 60px; 
+}
+label,
+legend {
+	 
+}
+select {
+	
+}
+input[type="checkbox"] {
+	
+}
+label span,
+legend span {
+	
+}
+
+.clearfix {
+	clear:both;
+}
+
+#nav ul li.link-login .icon-login, #nav ul li.link-download .icon-download, #nav li span:after, .formBox .sbToggle:after, .downloadCatalog .link i, .controls .btn, .fullWidthBox .videoBox .vbPlay i, .videoBox .vbPlay i, .catalogBox .sbToggle:after, .sbToggle:after, .allDillersMap .link-dillers i, .countryBox .mLine i, .mainImgBox .btn, #nav ul li.link-login .icon-loginIn, .lk-downloadBox .list li .new:after, .flInput  {
+	background:url(../images/icons/sprite.png) 0 0 no-repeat;
+}
+.systemSBox .list li .imgBox img, .systemSBox .list li .imgBox a, .systemSBox .list li .imgBox .over, .catalogBox .list li .imgBox img, .catalogBox .list li .imgBox a, .catalogBox .list li .imgBox .over, .allDillersMap .map-box, .accardionBox .abiContent, .sbBig .sbOverlay {
+	-webkit-transition:all 0.4s ease-in;  
+    -moz-transition:all 0.4s ease-in;  
+  	-o-transition:all 0.4s ease-in;  
+   	transition:all 0.4s ease-in;
+}
+e {
+	-webkit-transition:none;  
+    -moz-transition:none;  
+  	-o-transition:none;  
+   	transition:none;
+}
+
+.layout {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.row {
+    min-height: 1px;
+    position: relative;
+}
+.row::before, .row::after {
+    content: " ";
+    display: table;
+}
+.row::after {
+    clear: both;
+}
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+    float: left;
+}
+.col1 {
+    width: 8.33333333%;
+}
+.col2 {
+    width: 16.66666667%;
+}
+.col3 {
+    width: 25%;
+}
+.col4 {
+    width: 33.3333%;
+}
+.col5 {
+    width: 41.66666667%;
+}
+.col6 {
+    width: 50%;
+}
+.col7 {
+    width: 58.33333333%;
+}
+.col8 {
+    width: 66.6667%;
+}
+.col9 {
+    width: 75%;
+}
+.col10 {
+    width: 83.33333333%;
+}
+.col11 {
+    width: 91.66666667%;
+}
+.col12 {
+    width: 100%;
+}
+html, body {
+    width: 100%;
+	min-width:320px;
+}
+html {height: 100%;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {font-family: 'PT_Sans', sans-serif; font-weight:normal; font-style:normal;
+	color:#222; font-size:16px; line-height: inherit;
+}
+h1, h2, h3{}
+h1{}
+h2{font-size:35px; font-weight:bold}
+h3{}
+
+a, a:link, a:visited{color:#222}
+a:hover{color:#222; }
+a:focus, .btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus{outline:none; border:none; outline-offset:0; text-decoration:none; box-shadow:none; transition: all 0.2s ease-in-out 0s;}
+.b_templates_item_content .b_more a{transition: all 0.2s ease-in-out 0s;}
+.btn-red, .btn-red:link, .btn-red:visited{width:330px; background: #d0513c; border: none; border-radius: 0; box-shadow: none; color: #fff; font-size: 30px; font-weight: bold;}
+.btn-red:hover, .btn-red.hover, .b_templates_item_content .b_more a:hover, .b_order_tabs .b_buy .btn-red:hover{opacity:1;background:#ea634c}
+button:focus{outline:none;}
+/** Generated by FG **/
+@font-face {
+	font-family: 'PT_Sans';
+	src: url('../fonts/PT_Sans-Web-Regular.eot');
+	src: url('../fonts/PT_Sans-Web-Regular.woff') format('woff'), url('../fonts/PT_Sans-Web-Regular.ttf') format('truetype'), url('../fonts/PT_Sans-Web-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/** Generated by FG **/
+@font-face {
+	font-family: 'PT_Sans';
+	src: url('../fonts/PT_Sans-Web-Bold.eot');
+	src: url('../fonts/PT_Sans-Web-Bold.woff') format('woff'), url('../fonts/PT_Sans-Web-Bold.ttf') format('truetype'), url('../fonts/PT_Sans-Web-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/** Generated by FG **/
+@font-face {
+	font-family: 'PT_Sans';
+	src: url('../fonts/PT_Sans-Web-Italic.eot');
+	src: url('../fonts/PT_Sans-Web-Italic.woff') format('woff'), url('../fonts/PT_Sans-Web-Italic.ttf') format('truetype'), url('../fonts/PT_Sans-Web-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+.wrapper {
+	min-width: 320px;
+	max-width: 1920px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	overflow:hidden;  position: relative;
+}
+
+.content {
+	padding: 0 0 227px;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -227px auto 0;
+	min-width: 320px;
+	max-width: 1920px;
+	height: 227px;
+	background: #e3e3e3;
+	position: relative;
+}
